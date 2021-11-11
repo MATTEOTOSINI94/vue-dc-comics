@@ -1,16 +1,11 @@
 @import "variabili.scss";
 
     main{
-        
+        .bg-container{
+            background-color: black;
+        }
     }
 
-    .bg-container{
-        background-color: black;
-        
-       
-
-      
-    }
 
     .content{
         padding: 50px 0;
@@ -33,18 +28,19 @@
         justify-content: space-between;
         padding: 55px 0;
 
+        .icon-style{
+            width: 30px;
+            
+        }
+
     }
 
-    .icon-style{
-        width: 30px;
-        
-    }
+   
 
    
 .flex-style{
     display: inline-flex;
     align-items: center;
-
     
 }
 
