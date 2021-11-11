@@ -7,38 +7,51 @@
       </div>
       <section class="section-icon">
       <div class="icon-container">
-          <div class="flex-style">
-              <img class="icon-style" src="../assets/buy-comics-digital-comics.png" alt="">
-              <p class="icon-text" >Digital Comics</p>
+          <div v-for="(el,i) in servizi" :key="i" class="flex-style">
+              <img class="icon-style" :src="el.pic" alt="">
+              <p class="icon-text" >{{el.servizio}}</p>
           </div>
-          <div class="flex-style">
-              <img class="icon-style" src="../assets/buy-comics-merchandise.png" alt="">
-              <p class="icon-text">Digital Comics</p>
-          </div>
-          <div class="flex-style">
-             <img class="icon-style" src="../assets/buy-comics-subscriptions.png" alt="">
-              <p class="icon-text">Digital Comics</p>
-          </div>
-          <div class="flex-style">
-              <img class="icon-style" src="../assets/buy-comics-shop-locator.png" alt="">
-              <p class="icon-text">Digital Comics</p>
-          </div>
-          <div class="flex-style">
-              
-          <img class="icon-style" src="../assets/buy-dc-power-visa.svg" alt="">
-              <p class="icon-text">Digital Comics</p>
-          </div>
+         
           
           
-          
+        
       </div>
       </section>
+
+      
   </main>
 </template>
 
 <script>
 export default {
-    name: "Main"
+    name: "Main",
+
+    data(){
+        return{
+            servizi:[
+                {
+                    servizio: "Digital Comics",
+                    pic: "../assets/buy-comics-digital-comics.png",
+                },
+                   {
+                    servizio: "Dc Merchandaise",
+                    pic: "../assets/buy-comics-merchandise.png",
+                },
+                    {
+                    servizio: "Subscrition",
+                    pic: "../assets/buy-comics-subscriptions.png",
+                },
+                 {
+                    servizio: "Comic Locator Shop",
+                    pic: "../assets/buy-comics-shop-locator.png",
+                },
+                   {
+                    servizio: "Dc Power Visa",
+                    pic: "../assets/buy-dc-power-visa.svg",
+                },
+            ]
+        }
+    }
 
 }
 </script>

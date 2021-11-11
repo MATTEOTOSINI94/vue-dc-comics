@@ -61,7 +61,33 @@
              
           </div>
       </div>
+        <section class="final-section">
+
+            <div class="last-tape">
+                <div><button>SIGN-UP-NOW</button></div>
+                <div class="icon-lastape">
+                    <h3 class="stile">FOLLOW US</h3>
+                 </div>
+
+                   <div class="icon-img">
+                       <img src="../assets/footer-facebook.png" alt="">
+                        <img src="../assets/footer-periscope.png" alt="">
+                        <img src="../assets/footer-pinterest.png" alt="">
+                        <img src="../assets/footer-twitter.png" alt="">
+                        <img src="../assets/footer-youtube.png" alt="">
+                    </div> 
+                        
+                    
+               
+                
+            </div>
+
+        </section>
+
+
   </footer>
+
+
 </template>
 
 <script>

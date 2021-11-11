@@ -3,7 +3,7 @@ footer{
    
 }
 #bg-maxi-container{
-    height: 300px;
+    height: 250px;
     background-image: url(../assets/footer-bg.jpg);
     overflow: hidden;
 }
@@ -50,3 +50,31 @@ h3{
         bottom: -154px;
 
     }
+
+    .final-section{
+        background-color: black;
+        padding: 15px 0;
+    }
+
+    .last-tape{
+        display: flex;
+        align-items: center;
+        width: 920px;
+        margin: auto;
+    }
+
+    .icon-lastape{
+        margin-left: auto;
+
+    }
+    .stile{
+        color: blue;
+    }
+
+    .icon-img img{
+        width: 25px;
+       
+        padding: 0 10px;
+    }
+
+   

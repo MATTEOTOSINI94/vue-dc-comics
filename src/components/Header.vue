@@ -6,12 +6,8 @@
       </div>
 
         <ul>
-          <li>Carachters</li>
-          <li>comics</li>
-          <li>Movie</li>
-          <li>Carachters</li>
-          <li>comics</li>
-          <li>Movie</li>
+          <li v-for="(elemento,i) in service" :key="i">{{elemento.titolo}}</li>
+          
         </ul>
     </div>
   </header>
@@ -20,6 +16,40 @@
 <script>
 export default {
   name: 'Header',
+
+  data(){
+    return{
+      service:[
+        {
+          titolo:"CARACHTER"
+        },
+          {
+          titolo:"COMICS"
+        },
+          {
+          titolo:"MOVIES"
+        },
+          {
+          titolo:"TV"
+        },
+          {
+          titolo:"GAME"
+        },
+          {
+          titolo:"VIDEOS"
+        },
+                  {
+          titolo:"FANS"
+        },
+                 {
+          titolo:"NEWS"
+        },
+        {
+          titolo:"SHOP"
+        }
+      ]
+    }
+  }
  
 }
 </script>
