@@ -1,0 +1,52 @@
+footer{
+
+   
+}
+#bg-maxi-container{
+    height: 300px;
+    background-image: url(../assets/footer-bg.jpg);
+    overflow: hidden;
+}
+
+.lista-container{
+  
+    display: flex;
+    width: 920px;
+    margin: auto;
+    position: relative;
+   
+}
+h3{
+    font-family: fantasy;
+    color: white;
+    font-weight: 100;
+}
+
+    ul{
+        color: white;
+        list-style: none;
+        padding: 0;
+    }
+    ul li{
+        font-size: 10px;
+        font-weight: lighter;
+        color: gray;
+    }
+
+    .conetent-list{
+        padding: 0 10px;
+    }
+
+    #elemento-lista{
+        position: absolute;
+         top: 106px;
+    }
+
+
+    .style-img{
+        position:absolute;
+        width: 400px;
+        right: 20px;
+        bottom: -154px;
+
+    }
