@@ -2,7 +2,7 @@
   <header class="hello">
     <div class="container-logo-list">
       <div>
-        <img src="assets/dc-logo.png" alt="">
+        <img src="../assets/dc-logo.png" alt="">
       </div>
 
         <ul>
