@@ -1,0 +1,20 @@
+@import "variabili.scss";
+
+.container-logo-list{
+    display: flex;
+    width: 920px;
+    margin: auto;
+    align-items:center ;
+
+    ul{
+        
+        list-style: none;
+        display: flex;
+        margin-left: auto;
+
+        li{
+            padding: $padding;
+        }
+
+    }
+}
