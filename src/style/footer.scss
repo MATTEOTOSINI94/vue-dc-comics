@@ -12,7 +12,7 @@ footer{
 .lista-container{
   
     display: flex;
-    width: 920px;
+    max-width: 920px;
     margin: auto;
     position: relative;
     padding: 60px 0;
@@ -28,12 +28,15 @@ h3{
         color: white;
         list-style: none;
         padding: 0;
+
+        li{
+            font-size: 10px;
+            font-weight: lighter;
+            color: gray;
+            line-height: 10px;
+        }
     }
-    ul li{
-        font-size: 10px;
-        font-weight: lighter;
-        color: gray;
-    }
+     
 
     .conetent-list{
         padding: 0 10px;
@@ -65,8 +68,15 @@ h3{
     .last-tape{
         display: flex;
         align-items: center;
-        width: 920px;
+        max-width: 920px;
         margin: auto;
+
+        button{
+            background: transparent;
+            border: 1px solid blue;
+            padding: 5px;
+            color: white;
+        }
     }
 
     .icon-lastape{

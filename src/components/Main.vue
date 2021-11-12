@@ -1,10 +1,20 @@
 <template>
   <main>
       <div class="bg-container">
-          <div class="content">
-               <h4 class="style-content">-->content goes here</h4>
-          </div>
+        <div class="content">
+            <ProductCard v-for="(elemento,i) in dcLista" 
+            :key="i"
+            :img="elemento.thumb"
+            :prezzo="elemento.price"
+            :title="elemento.series"
+            :subtitle="elemento.type"
+            >
+            </ProductCard>
+         </div>
       </div>
+
+
+
       <section class="section-icon">
       <div class="icon-container">
           <div v-for="(el,i) in servizi" :key="i" class="flex-style">
@@ -23,11 +33,20 @@
 </template>
 
 <script>
+import ProductCard from "@/components/griglia.vue";
+import jsonData from "../assets/dc-comics.json";
 export default {
+
+    
     name: "Main",
+    components:{
+        ProductCard
+    },
 
     data(){
         return{
+
+            dcLista : jsonData,
             servizi:[
                 {
                     servizio: "Digital Comics",
