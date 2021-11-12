@@ -21,18 +21,26 @@ export default {
 
 <style lang="scss" scoped>
     .container-card{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+        width: calc(100% / 6 );
+           
+       
        
 
         .card{
-           width: calc(100% / 6);
-             position: relative;
+           
+           position: relative;
             
+            h4{
+                color: white;
+                font-size: small;
+            }
 
             img{
-                width: 100%;
+              width:150px;
+              height: 150px;
+              
+              object-fit: cover
+                
               
             };
 
@@ -43,7 +51,7 @@ export default {
                 left: 0;
                 right: 0;
                 background-color: #f2f0f8;
-               
+                
                 width: 0%;
                 height: 100%;
                 transition: 2s ;
@@ -55,6 +63,7 @@ export default {
     }
 
     .card:hover .overlay{
+        opacity: 0.5;
         width: 100%;
     }
 </style>
