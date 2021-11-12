@@ -8,7 +8,7 @@
       <section class="section-icon">
       <div class="icon-container">
           <div v-for="(el,i) in servizi" :key="i" class="flex-style">
-              <img class="icon-style" :src="el.pic" alt="">
+              <img class="icon-style" :src="require('../assets/'+ el.pic)"  alt="">
               <p class="icon-text" >{{el.servizio}}</p>
           </div>
          
@@ -31,23 +31,23 @@ export default {
             servizi:[
                 {
                     servizio: "Digital Comics",
-                    pic: "../assets/buy-comics-digital-comics.png",
+                    pic: "buy-comics-digital-comics.png",
                 },
                    {
                     servizio: "Dc Merchandaise",
-                    pic: "../assets/buy-comics-merchandise.png",
+                    pic: "buy-comics-merchandise.png",
                 },
                     {
                     servizio: "Subscrition",
-                    pic: "../assets/buy-comics-subscriptions.png",
+                    pic: "buy-comics-subscriptions.png",
                 },
                  {
                     servizio: "Comic Locator Shop",
-                    pic: "../assets/buy-comics-shop-locator.png",
+                    pic: "buy-comics-shop-locator.png",
                 },
                    {
                     servizio: "Dc Power Visa",
-                    pic: "../assets/buy-dc-power-visa.svg",
+                    pic: "buy-dc-power-visa.svg",
                 },
             ]
         }

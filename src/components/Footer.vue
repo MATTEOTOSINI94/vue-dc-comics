@@ -4,35 +4,38 @@
 
           <div class="lista-container">
              <div class="conetent-list">
-                  <h3>DC Comics</h3>
+               
                 <ul>  
+                   <h3>DC Comics</h3>
                   <li>ciao</li>
                   <li>ciao</li>
                   <li>ciao</li>
                   <li>ciao</li>
                   <li>ciao</li>
               </ul>
-             </div>
+            
                 
-                   <div class="conetent-list">
-                       <h3>DC</h3>
+                   
+                      
                   <ul>
+                     <h3>DC</h3>
                     <li>ciao</li>
                     <li>ciao</li>
                     <li>ciao</li>
                     <li>ciao</li>
                     <li>ciao</li>
-                     <li>ciao</li>
+                    <li>ciao</li>
                     <li>ciao</li>
                     <li>ciao</li>
                     <li>ciao</li>
                     <li>ciao</li>
                   
                 </ul>
-             </div>
-                   <div class="conetent-list">
-                 <h3>SITES</h3>
+             
+                   
+                 
                   <ul>
+                    <h3>SITES</h3>
                     <li>ciao</li>
                     <li>ciao</li>
                     <li>ciao</li>
@@ -43,11 +46,12 @@
                     <li>ciao</li>
                     <li>ciao</li>
               </ul>
-             </div>
+             
               
-                  <div id="elemento-lista" class="conetent-list" >
-                  <h3>SHOP</h3>
+                  
+                  
                   <ul>
+                    <h3>SHOP</h3>
                     <li>ciao</li>
                     <li>ciao</li>
                     
