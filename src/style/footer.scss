@@ -29,21 +29,42 @@ h3{
         list-style: none;
         padding: 0;
 
+        h3{
+            padding-bottom: 10px;
+        }
+
         li{
             font-size: 10px;
             font-weight: lighter;
             color: gray;
-            line-height: 10px;
+            line-height: 15px;
         }
     }
+
+    
      
 
     .conetent-list{
         padding: 0 10px;
+      
+        
+    }
+
+    .lista-s{
         display: flex;
-        gap: 40px;
-        flex-wrap: wrap;
-        width: 255px;
+
+        ul{
+            padding: 0 10px;
+
+            h3{
+                padding-bottom: 10px;
+
+            }
+
+            li{
+                line-height: 15px;
+            }
+        }
     }
 
     #elemento-lista{

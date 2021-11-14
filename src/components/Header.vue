@@ -6,7 +6,7 @@
       </div>
 
         <ul>
-          <li v-for="(elemento,i) in service" :key="i">{{elemento.titolo}}</li>
+          <li v-for="(elemento,i) in service" :key="i" :class="i === currentActive ? 'marker' : '' "  @click="currentActive = i">{{elemento.titolo}}</li>
           
         </ul>
     </div>
@@ -19,6 +19,8 @@ export default {
 
   data(){
     return{
+
+      currentActive:0,
       service:[
         {
           titolo:"CARACHTER"

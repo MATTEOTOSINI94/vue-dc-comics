@@ -1,11 +1,14 @@
 <template>
    <div class="container-card">
                <div class="card">
-                   <img :src= img alt="logo">
+                   <div class="box-overlay">
+                    <img :src= "img" alt="logo">
+                      <div class="overlay"><p>{{subtitle}}+{{prezzo}}</p></div>
+                   </div>
                    <h4>{{title}}</h4>
                    
 
-                <div class="overlay"><p>{{subtitle}}+{{prezzo}}</p></div>
+              
                </div>
 
           </div>
@@ -14,31 +17,65 @@
 <script>
 export default {
     name: "ProductCard",
-    props:["img","prezzo","title","subtitle"]
+    // props:["img","prezzo","title","subtitle"]
+    props:{
+
+        img:{
+            type: String,
+            required: true
+        },
+         prezzo:{
+            type: String,
+            required: true
+        },
+         title:{
+            type: String,
+            required: true
+        },
+         subtitle:{
+            type: String,
+            required: true
+        },
+
+        active: Boolean,
+    }
+
+
 
 }
 </script>
 
 <style lang="scss" scoped>
+
+  .box-overlay{
+              position: relative;
+              height: 120px;
+
+          }
     .container-card{
-        width: calc(100% / 6 );
+        display: flex;
+       width: calc(100% / 6);
            
-       
+     
        
 
         .card{
+              
+           width: 120px;
+          
            
-           position: relative;
             
             h4{
                 color: white;
-                font-size: small;
-            }
+                font-size: 10px;
+                font-family: 'Times New Roman', Times, serif;
+                padding: 10px 0;
+                }
 
             img{
-              width:150px;
-              height: 150px;
-              
+              width:120px;
+              height: 120px;
+             
               object-fit: cover
                 
               
@@ -47,14 +84,21 @@ export default {
             .overlay{
                 content: "";
                 position: absolute;
+                top: 0;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 background-color: #f2f0f8;
-                
-                width: 0%;
-                height: 100%;
+                opacity: 0;
                 transition: 2s ;
+
+                p{
+                    position: absolute;
+                    bottom: 50%;
+                    right: 50%;
+                    transform: translate(50%, 50%);
+                    text-align: center;
+                }
                 
             }
 
@@ -62,8 +106,8 @@ export default {
         }
     }
 
-    .card:hover .overlay{
-        opacity: 0.5;
-        width: 100%;
+    .box-overlay:hover .overlay{
+        opacity: 0.8;
+      width: 100%;
     }
 </style>

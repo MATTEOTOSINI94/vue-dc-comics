@@ -7,11 +7,9 @@
                
                 <ul>  
                    <h3>DC Comics</h3>
-                  <li>ciao</li>
-                  <li>ciao</li>
-                  <li>ciao</li>
-                  <li>ciao</li>
-                  <li>ciao</li>
+                  <li v-for="elemento,i in dcomics" :key="i">{{elemento}}</li>
+                 
+
               </ul>
             
                 
@@ -19,32 +17,19 @@
                       
                   <ul>
                      <h3>DC</h3>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
+                    <li v-for="el,i in shopDc" :key="i">{{el}}</li>
+                    
+                    
                   
                 </ul>
+                </div>
              
                    
-                 
+                 <div class="lista-s">
                   <ul>
                     <h3>SITES</h3>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
-                    <li>ciao</li>
+                    <li v-for="element,i in dc " :key="i">{{element}}</li>
+                   
               </ul>
              
               
@@ -52,13 +37,13 @@
                   
                   <ul>
                     <h3>SHOP</h3>
-                    <li>ciao</li>
-                    <li>ciao</li>
+                    <li v-for="site,i in sites" :key="i">{{site}}</li>
+                  
                     
               </ul>
-
-            
              </div>
+            
+             
 
              
                  <img class="style-img" src="../assets/dc-logo-bg.png" alt="">
@@ -96,7 +81,48 @@
 
 <script>
 export default {
-    name:"Footer"
+    name:"Footer",
+    data(){
+        return{
+            dcomics:[
+                "Caracherts",
+                "Comics",
+                "Movies",
+                "Tv",
+                "Games",
+                "Videos",
+                "News",
+            ],
+
+            shopDc:[
+                "Shop DC",
+                "Shop DC Collectibles"
+            ],
+
+
+            dc:[
+                "Terms of use",
+                "Privacy Policies",
+                "Ad Choiches",
+                "Jobs",
+                "Subscrition",
+                "Talenet WorkShop",
+                "CpSc Certificate",
+                "Ratings",
+                "Shop Help",
+                "Contact Us"
+            ],
+
+            sites:[
+                "DC",
+                "Mad Magazine",
+                "Dc Kids",
+                "DC Universe",
+                "DC Power Visa"
+            ]
+        
+        }
+    }
 
 }
 </script>
